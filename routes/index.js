@@ -1,11 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-
-
-var data = {name:'이시화'};
-
 router.get('/', function (req, res, next) {
+   var data = {name:'메인 화면 입니다.'};
     res.render('index.html',data);
 });
 

@@ -1,11 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-
-
-var data = {name:'bbs get'};
-
 router.get('/', function (req, res, next) {
+   var data = {name:'bbs get'};
     res.render('bbs/bbs.html',data);
 });
 
